@@ -9,7 +9,11 @@ public class Libro {
 	private int cantidadDePaginas;
 	
 	
+	
+
+
 	public Libro(String titulo, String autor, Genero genero, int cantidadDePaginas) {
+		super();
 		this.titulo = titulo;
 		this.autor = autor;
 		this.genero = genero;
@@ -44,6 +48,16 @@ public class Libro {
 		Libro other = (Libro) obj;
 		return Objects.equals(autor, other.autor) && cantidadDePaginas == other.cantidadDePaginas
 				&& genero == other.genero && Objects.equals(titulo, other.titulo);
+	}
+
+
+	public Object getAutor() {
+		return this.autor;
+	}
+
+
+	public Genero getGenero() {
+		return genero;
 	}
 	
 	

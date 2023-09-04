@@ -6,5 +6,6 @@ public enum Genero {
 	AVENTURA, 
 	NOVELA, 
 	HISTORIA, 
-	INFANTILES;
+	INFANTILES,
+	TERROR;
 }
