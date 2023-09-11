@@ -1,9 +1,9 @@
-package encapsulamiento;
+package geometria;
 import static java.lang.Math.*;
 
 import java.util.Objects;
 
-public class Punto {
+public class Punto implements Desplazable{
 
 	private double x;
 	private double y;
@@ -41,18 +41,7 @@ public class Punto {
 		return estaSobreX() || estaSobreY();
 	}
 
-	public Cuadrante getCuadrante() {
-		if (x > 0 && y > 0)
-			return Cuadrante.PRIMERO;
-		if (x < 0 && y > 0)
-			return Cuadrante.SEGUNDO;
-		if (x < 0 && y < 0)
-			return Cuadrante.TERCERO;
-		if (x > 0 && y < 0)
-			return Cuadrante.CUARTO;
-
-		return null;
-	}
+	
 	
 	public double distanciaAlOrigen() {
 		//return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));

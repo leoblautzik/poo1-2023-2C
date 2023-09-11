@@ -28,7 +28,9 @@ public class Empresa {
 				
 		Empleado cacho = new EmpleadoDePlantaTemporaria(false, 1, 80);
 		Empleado luis = new EmpleadoDePlantaPermanente(false, 1, 80, 2);
-		Empleado ana = new Gerente(true, 3, 100, 10);
+		Gerente ana = new Gerente(true, 3, 100, 10);
+		
+		
 		
 		acme.agregarEmpleado(ana);
 		System.out.println(ana.getSalario());

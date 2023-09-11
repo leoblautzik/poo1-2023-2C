@@ -62,11 +62,10 @@ public class Circulo {
 		setRadio(Math.sqrt(area / Math.PI));
 	}
 	
-
-
-
-
-
+	public void desplazar(double enX, double enY) {
+		this.centro.desplazar(enX, enY);
+	}
+	
 
 	@Override
 	public String toString() {
