@@ -7,6 +7,9 @@ public class Dentista  extends Profesional{
 		// TODO Auto-generated constructor stub
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Odontologo " + super.toString();
+	}
 
 }

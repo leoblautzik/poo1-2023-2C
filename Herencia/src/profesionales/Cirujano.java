@@ -10,5 +10,10 @@ public class Cirujano extends Medico {
 	public double getHonorario() {
 		return super.getHonorario() * 1.25;
 	}
+	
+	@Override
+	public String toString() {
+		return "Cirujano " + super.toString();
+	}
 
 }

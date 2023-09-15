@@ -10,5 +10,12 @@ public class Medico extends Profesional{
 //	public double getHonorario() {
 //		return super.getHonorario();
 //	}
+	
+	@Override
+	public String toString() {
+		return "Dr. " + super.toString();
+	}
+
+	
 
 }

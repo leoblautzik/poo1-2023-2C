@@ -11,5 +11,10 @@ public class Endodoncista extends Dentista {
 	public double getHonorario() {
 		return super.getHonorario() * 1.25;
 	}
+	
+	@Override
+	public String toString() {
+		return "Endodoncista " + super.toString();
+	}
 
 }
