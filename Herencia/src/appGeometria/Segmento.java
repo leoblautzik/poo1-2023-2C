@@ -1,4 +1,4 @@
-package geometria;
+package appGeometria;
 
 public class Segmento implements Desplazable, Comparable<Segmento>, EsParalelo{
 	

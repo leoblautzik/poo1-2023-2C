@@ -1,4 +1,4 @@
-package geometria;
+package appGeometria;
 
 public class Circulo extends Elipse {
 

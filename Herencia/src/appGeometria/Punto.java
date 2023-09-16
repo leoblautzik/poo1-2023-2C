@@ -1,4 +1,4 @@
-package geometria;
+package appGeometria;
 import static java.lang.Math.*;
 
 import java.util.Objects;

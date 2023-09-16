@@ -1,4 +1,4 @@
-package geometria;
+package appGeometria;
 
 public class Triangulo extends Figura implements EsParalelo {
 

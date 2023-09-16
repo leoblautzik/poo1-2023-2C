@@ -1,4 +1,4 @@
-package geometria;
+package appGeometria;
 
 import static org.junit.jupiter.api.Assertions.*;
 

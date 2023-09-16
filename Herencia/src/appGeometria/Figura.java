@@ -1,4 +1,4 @@
-package geometria;
+package appGeometria;
 
 public abstract class Figura implements Desplazable, Comparable<Figura>{
 	
