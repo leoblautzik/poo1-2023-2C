@@ -6,5 +6,6 @@ public class Cuadrado extends Rectangulo {
 		super(lado, lado);
 		
 	}
-
+	
+	
 }

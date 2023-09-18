@@ -23,5 +23,13 @@ class FigurasTest {
 		Cuadrado cua = new Cuadrado(5);
 		assertEquals(25, cua.getArea());
 	}
+	
+	@Test
+	void circuloTest() {
+		Circulo c = new Circulo(4);
+		assertEquals(50.26, c.getArea(), 0.01);
+	}
+	
+	
 
 }

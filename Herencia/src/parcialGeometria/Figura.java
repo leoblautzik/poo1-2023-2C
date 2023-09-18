@@ -1,6 +1,6 @@
 package parcialGeometria;
 
-public abstract class Figura {
+public abstract class Figura implements Comparable<Figura>{
 	
 	private double area;
 	
@@ -8,8 +8,13 @@ public abstract class Figura {
 		this.area = area;
 	}
 	
-	public  final double getArea() {
+	public final double getArea() {
 		return this.area;
+	}
+	
+	@Override
+	public int compareTo(Figura otra) {
+		return Double.compare(this.getArea(), otra.getArea());
 	}
 	
 
