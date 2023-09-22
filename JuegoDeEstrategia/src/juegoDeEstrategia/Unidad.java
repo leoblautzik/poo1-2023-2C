@@ -5,7 +5,8 @@ public abstract class Unidad {
 	private int danio;
 	private int salud;
 	private Punto posicion;
-
+	
+	
 	public Unidad(int danio, int salud, Punto posicion) {
 		this.setDanio(danio);
 		this.setSalud(salud);
@@ -20,7 +21,7 @@ public abstract class Unidad {
 		return this.getSalud() > 0;
 	}
 
-	public void recibirDanio(int danio) {
+	protected void recibirDanio(int danio) {
 		this.setSalud(this.getSalud() - danio);
 	}
 
@@ -28,7 +29,7 @@ public abstract class Unidad {
 		return danio;
 	}
 
-	public void setDanio(int danio) {
+	private void setDanio(int danio) {
 		if (danio < 0)
 			throw new Error("Valor incorrecto para el daño");
 		this.danio = danio;
@@ -48,7 +49,7 @@ public abstract class Unidad {
 		return posicion;
 	}
 
-	public void setPosicion(Punto posicion) {
+	private void setPosicion(Punto posicion) {
 		this.posicion = posicion;
 	}
 

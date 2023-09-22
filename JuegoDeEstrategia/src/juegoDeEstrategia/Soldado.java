@@ -25,7 +25,6 @@ public class Soldado extends Unidad implements Bebedor {
 		if (!this.puedeAtacar(enemigo)) {
 			throw new Error("No puede atacar");
 		}
-
 		enemigo.recibirDanio(this.getDanio());
 		this.setEnergia(this.getEnergia() - 10);
 	}
