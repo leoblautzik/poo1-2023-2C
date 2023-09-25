@@ -100,7 +100,6 @@ public class CerraduraTest {
 		assertEquals(0, trabex.contarAperturasExitosas());
 		trabex.abrir(123456);
 		
-		
 	}
 
 }
