@@ -46,5 +46,17 @@ class JuegoDeEstrategiaTest {
 		
 	}	
 	
+	@Test
+	void caballeroTest() {
+		Caballo silver = new Caballo();
+		Caballo tornado = new Caballo();		
+		Caballero kimosabi = new Caballero(new Punto(2,0), silver);
+		Caballero zorro = new Caballero(new Punto(5,0), tornado);
+		
+		zorro.atacar(kimosabi);
+		
+		
+	}	
+	
 
 }

@@ -13,5 +13,9 @@ public class Caballo implements Bebedor {
 		this.rebelde = false;
 	}
 	
+	public void sePoneRebelde() {
+		this.rebelde = true;
+	}
+	
 	
 }

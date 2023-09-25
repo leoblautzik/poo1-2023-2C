@@ -9,17 +9,14 @@ package juegoDeEstrategia;
 
 
 public class Caballero extends Unidad {
-	
-	
+
 	private Caballo caballo;
 	private int contadorDeAtaques = 0;
-
 	
 	public Caballero(Punto posicion, Caballo pony) {
 		super(50, 200, posicion);
 		this.caballo = pony;
 	}
-
 	
 	@Override
 	public boolean puedeAtacar(Unidad u) {
@@ -36,6 +33,8 @@ public class Caballero extends Unidad {
 		}
 		enemigo.recibirDanio(this.getDanio());
 		this.contadorDeAtaques++;
+		if (this.contadorDeAtaques == 3)
+			this.caballo.sePoneRebelde();
 	}
 	
 	public void darAguaAlCaballo() {
