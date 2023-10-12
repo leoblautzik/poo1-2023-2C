@@ -1,5 +1,5 @@
-
-public class CajaDeAhorro extends Cuenta {
+package cuentasBancarias;
+public  class CajaDeAhorro extends Cuenta {
 
 	public CajaDeAhorro(int dni) {
 		super(dni);

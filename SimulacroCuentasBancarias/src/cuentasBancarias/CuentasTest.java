@@ -1,3 +1,4 @@
+package cuentasBancarias;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -54,8 +55,20 @@ class CuentasTest {
 		cuentaDeVictor.transferir(cuentaDeLeo, 1000);
 		assertEquals(500,city.totalSaldoEnDescubierto());
 		
-		
+	}
 	
+	@Test
+	void bancoArrTest() {
+		BancoConArreglo city = new BancoConArreglo(5);
+		Cuenta cuentaDeLeo = city.abrirCajaDeAhorro(12345678);
+		Cuenta cuentaDeVictor =  city.abrirCuentaCorriente(20456723, 1000);
+		cuentaDeLeo.depositar(2000);
+		cuentaDeVictor.depositar(500);
+		city.listarCuentas();
+		cuentaDeVictor.transferir(cuentaDeLeo, 1000);
+		assertEquals(500,city.totalSaldoEnDescubierto());
+		cuentaDeVictor.transferir(cuentaDeLeo, 500);
+		assertEquals(1000,city.totalSaldoEnDescubierto());
 	}
 
 

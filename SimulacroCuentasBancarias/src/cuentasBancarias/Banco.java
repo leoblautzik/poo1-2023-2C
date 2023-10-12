@@ -1,14 +1,15 @@
+package cuentasBancarias;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Banco {
-	
+
+	private ArrayList<Cuenta> cuentas;
+
 	public Banco() {
 		this.cuentas = new ArrayList<Cuenta>();
 	}
 
-	private ArrayList<Cuenta> cuentas;
-	
 	public Cuenta abrirCajaDeAhorro(int dni) {
 		Cuenta aux = new CajaDeAhorro(dni);
 		cuentas.add(aux);
@@ -20,8 +21,7 @@ public class Banco {
 		cuentas.add(aux);
 		return aux;
 	}
-	
-	
+
 	public double totalSaldoEnDescubierto() {
 		double total = 0;
 		for (Cuenta c : cuentas)
@@ -29,7 +29,7 @@ public class Banco {
 				total += c.getSaldo();
 		return Math.abs(total);
 	}
-	
+
 	public void listarCuentas() {
 		Collections.sort(cuentas);
 		System.out.println("DNI" + "\t\t" + "Saldo");

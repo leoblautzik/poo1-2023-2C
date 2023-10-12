@@ -1,12 +1,13 @@
 package encapsulamiento;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
 public class PulsadoresTest {
 
-	@Test
+	@Test expected=Error.class
 	public void pulsadoresTest() {
 		
 		MaquinaDePulsadores mdp = new MaquinaDePulsadores(10);
