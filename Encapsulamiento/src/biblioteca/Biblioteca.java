@@ -23,7 +23,14 @@ public class Biblioteca {
 	}
 
 	public String libroEnLaPosicion(int posicion) {
-		return libros[posicion - 1].getTitulo();
+		try {
+			if (posicion < 1 || posicion > cantLibros)
+				throw new PosicionIncorrectaException("Posicion Invalida");
+			return libros[posicion - 1].getTitulo();
+		} catch (PosicionIncorrectaException pie) {
+			System.err.println(pie.getMessage());
+			return null;
+		}
 	}
 
 	public Libro libroConMasPaginas() {

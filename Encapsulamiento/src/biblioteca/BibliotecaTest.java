@@ -30,7 +30,8 @@ public class BibliotecaTest {
 		Biblioteca elBiblio = new Biblioteca(10);
 		elBiblio.agregarLibro("La metamorfosis", "Franz Kafka", Genero.CIENCIA_FICCION, 300);
 		elBiblio.agregarLibro("El resplandor", "Stephen King", Genero.NOVELA, 900);
-		assertEquals("La metamorfosis", elBiblio.libroEnLaPosicion(1));
+		assertEquals(null, elBiblio.libroEnLaPosicion(5));
+		assertEquals(null, elBiblio.libroEnLaPosicion(15));
 		assertEquals("El resplandor", elBiblio.libroEnLaPosicion(2));
 
 	}

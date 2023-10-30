@@ -43,6 +43,7 @@ public class ExpresionBalanceada {
 			}
 			i++;
 		}
+		
 		return balanceada && pila.empty();
 	}
 }

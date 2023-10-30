@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class PulsadoresTest {
 
-	@Test expected=Error.class
+	@Test (expected=Error.class)
 	public void pulsadoresTest() {
 		
 		MaquinaDePulsadores mdp = new MaquinaDePulsadores(10);
