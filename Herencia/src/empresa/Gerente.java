@@ -19,5 +19,7 @@ public class Gerente extends EmpleadoDePlantaPermanente {
 		return super.getHorasTrabajadas() * Gerente.VALOR_HORA +
 				this.getAntiguedad() + super.getSalatioFamiliar();
 	}
+	
+
 
 }

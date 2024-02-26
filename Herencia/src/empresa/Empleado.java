@@ -22,6 +22,8 @@ public abstract class Empleado {
 		return sf;
 
 	}
+	
+	
 
 	protected int getHorasTrabajadas() {
 		return horasTrabajadas;
